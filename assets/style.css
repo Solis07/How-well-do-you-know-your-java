@@ -8,11 +8,18 @@
   border: 1px solid blue;
 }
 
+body {
+
+}
 
 /* Main Container */
 
 .main-container {
   padding: 10px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
 /* Top Bar */
@@ -20,5 +27,36 @@
 .top-bar p {
   float: right;
 }
+
+/* Content Container */
+
+ .content-container {
+  height: 100%;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
+ /* Quiz Intro */
+
+ .quiz-intro {
+
+ }
+
+ .quiz-intro h1 {
+  text-align: center;
+ }
+
+ .quiz-intro p {
+  text-align: center;
+ }
+
+ .quiz-intro button {
+  display: block;
+  
+ }
+
 
 
