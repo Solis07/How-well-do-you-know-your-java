@@ -4,16 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  border: 1px solid blue;
-}
-
-body {
-
-}
-
-li {
-  list-style: none;
 }
 
 /* Main Container */
@@ -65,7 +55,7 @@ li {
 
 /* Main */
 
- main {
+ .main {
   display: block;
  }
 
