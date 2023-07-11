@@ -1,0 +1,24 @@
+/* General Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  border: 1px solid blue;
+}
+
+
+/* Main Container */
+
+.main-container {
+  padding: 10px;
+}
+
+/* Top Bar */
+
+.top-bar p {
+  float: right;
+}
+
+
