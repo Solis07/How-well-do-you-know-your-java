@@ -12,6 +12,10 @@ body {
 
 }
 
+li {
+  list-style: none;
+}
+
 /* Main Container */
 
 .main-container {
@@ -55,8 +59,38 @@ body {
 
  .quiz-intro button {
   display: block;
-  
+  margin: 0 auto;
+
  }
+
+/* Main */
+
+ main {
+  display: block;
+ }
+
+ /* Question Screen */
+
+ .question-screen {
+  display: none;
+ }
+
+ /* Finish Screen */
+
+ .finish-screen {
+  display: none;
+ }
+
+ /* Highscores Screen */
+
+ .highscores-screen {
+  display: none;
+ }
+
+
+
+
+
 
 
 
