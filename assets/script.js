@@ -77,4 +77,9 @@ function countdown() {
    }, 1000);
 }
 
-
+function startQuiz() {
+   quizIntro.style.display = "none"
+   questionScreen.style.display = "block"
+   questionNumber = 0
+   countdown();
+}
