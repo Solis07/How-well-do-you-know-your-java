@@ -40,7 +40,7 @@ var answerBtnOne = document.querySelector('#answer-btn1');
 var answerBtnTwo = document.querySelector('#answer-btn2');
 var answerBtnThree = document.querySelector('#answer-btn3');
 var answerBtnFour = document.querySelector('#answer-btn4');
-var checkLine = document.querySelector('#check');
+var check = document.querySelector('#check');
 
 var finishScreen = document.querySelector('#finish-screen');
 var finish = document.querySelector('#finish');
@@ -54,7 +54,7 @@ var backBtn = document.querySelector('#back-btn');
 var submitBtn = document.querySelector('#clear-btn');
 
 var timer = document.querySelector('#timer');
-var timeLeft = 60;
+var timeLeft = 90;
 var questionNumber = 0;
 var questionCount = 1;
 var total = 0;
@@ -96,8 +96,29 @@ function displayQuestion(n) {
    questionNumber = n;
 }
 
+function checkAnswer(event) {
+   event.preventDefault();
+   check.style.display = "block";
+   setTimeout(function () {
+      check.style.display = "none";
+   }, 1000);
 
+   if (questions[questionNumber].answer == event.target.value) {
+      check.textContent = "Correct!";
+      total = total + 10;
 
+   } else {
+      timeLeft = timeLeft - 10;
+      check.textContent = "Wrong!"
+   }
+
+   if (questionNumber < questions.length - 1) {
+      displayQuestion(questionNumber + 1);
+   } else {
+      gameOver();
+   }
+   questionCount++;
+}
 
 
 
