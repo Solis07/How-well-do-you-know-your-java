@@ -54,4 +54,27 @@ var backBtn = document.querySelector('#back-btn');
 var submitBtn = document.querySelector('#clear-btn');
 
 var timer = document.querySelector('#timer');
+var timeLeft = 60;
+var questionNumber = 0;
+var questionCount = 1;
+var total = 0;
+
+function countdown() {
+   var timeInterval = setInterval(function () {
+      timeLeft--;
+      timer.textContent = "Time left: " + timeLeft + " s";
+
+      if (timeLeft <= 0) {
+         clearInterval(timeInterval);
+         timer.textContent = "Time up!";
+         finish.textContent = "Time up!";
+         gameOver();
+
+      } else if (questionCount >= questions.length + 1) {
+         clearInterval(timeInterval);
+         gameOver();
+      }
+   }, 1000);
+}
+
 
