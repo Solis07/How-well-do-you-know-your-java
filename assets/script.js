@@ -66,8 +66,8 @@ function countdown() {
 
       if (timeLeft <= 0) {
          clearInterval(timeInterval);
-         timer.textContent = "Time up!";
-         finish.textContent = "Time up!";
+         timer.textContent = "Times up!";
+         finish.textContent = "Times up!";
          gameOver();
 
       } else if (questionCount >= questions.length + 1) {
@@ -77,9 +77,24 @@ function countdown() {
    }, 1000);
 }
 
-function startQuiz() {
+function beginQuiz() {
    quizIntro.style.display = "none"
    questionScreen.style.display = "block"
    questionNumber = 0
    countdown();
 }
+
+beginBtn.addEventListener("click", beginQuiz);
+
+function displayQuestion(n) {
+   question.textContent = questions[n].title;
+   answerBtnOne.textContent = questions[n].choices[0];
+   answerBtnTwo.textContent = questions[n].choices[1];
+   answerBtnThree.textContent = questions[n].choices[2];
+   answerBtnFour.textContent = questions[n].choices[4];
+   questionNumber = n;
+}
+
+
+
+

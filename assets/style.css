@@ -104,6 +104,7 @@
  }
 
  .check {
+  display: none;
   border-top: 1px solid black;
   margin-top: 1.25rem;
  }
