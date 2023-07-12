@@ -120,5 +120,7 @@ function checkAnswer(event) {
    questionCount++;
 }
 
-
+answerBtn.forEach(function (click) {
+   click.addEventListener("click" checkAnswer);
+});
 
