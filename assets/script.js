@@ -1,3 +1,6 @@
+
+// Variables and Ids need for the webpage.
+
 var questions = [
    {
       title: 'Commonly used data types DO NOT include:',
@@ -58,6 +61,8 @@ var questionNumber = 0;
 var questionCount = 1;
 var total = 0;
 
+// Timer for the quiz
+
 function countdown() {
    var timeInterval = setInterval(function () {
       timeLeft--;
@@ -76,6 +81,8 @@ function countdown() {
    }, 1000);
 }
 
+// After the user clicks begin quiz it takes the user to the next screen which is the question screen.
+
 function beginQuiz() {
    quizIntro.style.display = "none"
    questionScreen.style.display = "block"
@@ -86,6 +93,8 @@ function beginQuiz() {
 
 beginBtn.addEventListener("click", beginQuiz);
 
+// Function will display a question along with answers for the user.
+
 function displayQuestion(n) {
    question.textContent = questions[n].title;
    answerBtnOne.textContent = questions[n].choices[0];
@@ -94,6 +103,8 @@ function displayQuestion(n) {
    answerBtnFour.textContent = questions[n].choices[3];
    questionNumber = n;
 }
+
+// Function will tell the user whether their answers are correct or wrong. If correct will add to total, if wrong will subtract 10s from the time left.
 
 function checkAnswer(event) {
    event.preventDefault();
@@ -123,6 +134,8 @@ answerBtn.forEach(function (click) {
    click.addEventListener("click", checkAnswer);
 });
 
+// Takes the user to a screen where they will be able to submit their score along with initials.
+
 function gameOver() {
    questionScreen.style.display = "none";
    finishScreen.style.display = "block";
@@ -130,7 +143,7 @@ function gameOver() {
    timer.style.display = "none";
 }
 
-
+// Allows the user to submit their score and initials and stores their attempts.
 
 submitBtn.addEventListener("click", function () {
    var history = JSON.parse(localStorage.getItem("scores")) || []

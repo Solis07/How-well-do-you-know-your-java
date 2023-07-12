@@ -3,6 +3,8 @@ var clearButton = document.querySelector(".clear-button")
 
 var scores = JSON.parse(localStorage.getItem("scores"))
 
+// Displays the scores in the high scores page.
+
 function renderScores() {
   for (let i = 0; i < scores.length; i++) {
     var li = document.createElement("li")
@@ -12,6 +14,8 @@ function renderScores() {
 }
 
 renderScores()
+
+// Resets the high score page.
 
 clearButton.addEventListener("click", function () {
   localStorage.clear()
