@@ -82,6 +82,7 @@ function beginQuiz() {
    questionScreen.style.display = "block"
    questionNumber = 0
    countdown();
+   displayQuestion(questionNumber)
 }
 
 beginBtn.addEventListener("click", beginQuiz);
@@ -91,9 +92,11 @@ function displayQuestion(n) {
    answerBtnOne.textContent = questions[n].choices[0];
    answerBtnTwo.textContent = questions[n].choices[1];
    answerBtnThree.textContent = questions[n].choices[2];
-   answerBtnFour.textContent = questions[n].choices[4];
+   answerBtnFour.textContent = questions[n].choices[3];
    questionNumber = n;
 }
+
+
 
 
 
