@@ -51,7 +51,6 @@ var submitBtn = document.querySelector('#submit-btn');
 var highScoreScreen = document.querySelector('#highscore-screen');
 var record = document.querySelector('#record');
 var backBtn = document.querySelector('#back-btn');
-var clearBtn = document.querySelector('#clear-btn');
 
 var timer = document.querySelector('#timer');
 var timeLeft = 90;
