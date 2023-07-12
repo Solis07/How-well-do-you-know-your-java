@@ -127,7 +127,7 @@ answerBtn.forEach(function (click) {
 function gameOver() {
    questionScreen.style.display = "none";
    finishScreen.style.display = "block";
-   finalScore.textContent = "Your final score is " + total;
+   finalScore.textContent = "Your final score is " + total + ".";
    timer.style.display = "none";
 }
 
