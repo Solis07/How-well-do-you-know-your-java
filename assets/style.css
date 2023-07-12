@@ -40,7 +40,6 @@
  /* Quiz Intro */
 
  .quiz-intro { 
-  display: none;
   height: 50vh;
   text-align: center;
  }
