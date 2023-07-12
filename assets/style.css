@@ -17,6 +17,9 @@
 }
 
 /* Top Bar */
+.top-bar {
+  padding: 1rem 1rem 0 1rem;
+}
 
 .top-bar p {
   float: right;
@@ -24,7 +27,8 @@
 
 /* Content Container */
 
- .content-container {
+ .content-container,
+ .main {
   height: 100%;
   width: 50%;
   margin: 0 auto;
@@ -35,52 +39,94 @@
 
  /* Quiz Intro */
 
- .quiz-intro {
-
+ .quiz-intro { 
+  display:;
+  height: 50vh;
+  text-align: center;
  }
 
  .quiz-intro h1 {
-  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
  }
 
  .quiz-intro p {
-  text-align: center;
+  line-height: 1.25em;
+  padding-bottom: 1rem;
+  font-size: 1.15rem;
  }
 
  .quiz-intro button {
   display: block;
-  margin: 0 auto;
-
+  margin: auto;
  }
 
-/* Main */
-
- .main {
-  display: block;
+ .begin-button,
+ .submit-button,
+ .back-button,
+ .clear-button {
+  color: white;
+  background-color: purple;
+  border-style: none;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  font-size: 1rem;
  }
 
  /* Question Screen */
 
  .question-screen {
   display: none;
+  height: 50vh;
+ }
+
+ .question-screen h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+ }
+
+ .question-screen li{
+  list-style: none;
+  margin-top: 8px;
+  margin-bottom: 8px; 
+ }
+
+ .choice-button {
+  color: white; 
+  background-color: purple;
+  border-style: none;
+  width: 120px;
+  height: 36px;
+  border-radius: 8px;
+  font-size: 1rem;
  }
 
  /* Finish Screen */
 
  .finish-screen {
   display: none;
+  height: 50vh;
  }
 
- /* Highscore Screen */
+ .finish-screen h2,
+ .highscore-screen h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+ }
+
+ .finish-screen p {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+ }
+
+ /* High score Screen */
 
  .highscore-screen {
   display: none;
+  height: 50vh;
  }
-
-
-
-
-
-
-
 
