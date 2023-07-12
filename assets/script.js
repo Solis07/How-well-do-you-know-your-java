@@ -134,7 +134,7 @@ answerBtn.forEach(function (click) {
    click.addEventListener("click", checkAnswer);
 });
 
-// Takes the user to a screen where they will be able to submit their score along with initials.
+// Takes the user to a screen where they will be able to submit their score along with their initials.
 
 function gameOver() {
    questionScreen.style.display = "none";
