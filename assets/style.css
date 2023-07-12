@@ -40,7 +40,7 @@
  /* Quiz Intro */
 
  .quiz-intro { 
-  display:;
+  display: none;
   height: 50vh;
   text-align: center;
  }
@@ -94,7 +94,7 @@
   margin-bottom: 8px; 
  }
 
- .choice-button {
+ .answer-button {
   color: white; 
   background-color: purple;
   border-style: none;
@@ -102,6 +102,16 @@
   height: 36px;
   border-radius: 8px;
   font-size: 1rem;
+ }
+
+ .check {
+  border-top: 1px solid black;
+  margin-top: 1.25rem;
+ }
+
+ .check p {
+  font-size: 1.3rem;
+  margin-top: 5px;
  }
 
  /* Finish Screen */
@@ -129,4 +139,13 @@
   display: none;
   height: 50vh;
  }
+
+ .highscore-screen ol {
+  margin-bottom: 1rem;
+ }
+
+ .highscore-screen li {
+  margin-left: 1.3rem;
+ }
+
 

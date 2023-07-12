@@ -11,45 +11,51 @@
     <div class="main-container">
 
       <div class="top-bar">
-        <button>View High scores</button>
-        <p>Timer: 00:00</p>
+        <button id="high-score">View High scores</button>
+        <p id="timer">Time Left: 60s</p>
       </div>
 
       <div class="content-container">
-        <header class="quiz-intro">
+        <header class="quiz-intro" id="quiz-intro">
           <h1>Coding Quiz Challenge</h1>
           <p>Try to answer the following code-related questions within the time limit.
             Keep in mind that incorrect answers will penalize your score/time by ten seconds!
           </p>
-          <button class="begin-button">Begin Quiz</button>
+          <button class="begin-button" id="begin-btn">Begin Quiz</button>
         </header>
 
         <main>
 
-          <section class="question-screen">
-            <h2>Question Here</h2>
+          <section class="question-screen" id="question-page">
+            <h2 id="question">Question Here</h2>
             <ul>
-              <li><button class="choice-button">Answer 1</button></li>
-              <li><button class="choice-button">Answer 2</button></li>
-              <li><button class="choice-button">Answer 3</button></li>
-              <li><button class="choice-button">Answer 4</button></li>
+              <li><button class="answer-button" id="answer-btn1">Answer 1</button></li>
+              <li><button class="answer-button" id="answer-btn2">Answer 2</button></li>
+              <li><button class="answer-button" id="answer-btn3">Answer 3</button></li>
+              <li><button class="answer-button" id="answer-btn4">Answer 4</button></li>
             </ul>
-          </section>
-
-          <section class="finish-screen">
-            <h2>All done!</h2>
-            <p>Your final score is: </p>
-            <div>
-              <label for=""> Enter initials</label>
-              <input type="text">
-              <button class="submit-button">Submit</button>
+            <div class="check" id="check">
+              <p> Correct or Wrong</p>
             </div>
           </section>
 
-          <section class="highscore-screen">
+          <section class="finish-screen" id="finish-screen">
+            <h2 id="finish">All done!</h2>
+            <p id="final score">Your final score is: </p>
+            <div>
+              <label for=""> Enter initials</label>
+              <input type="text" id="initials">
+              <button class="submit-button" id="submit-btn">Submit</button>
+            </div>
+          </section>
+
+          <section class="highscore-screen" id="highscore-screen">
             <h2>High scores</h2>
-            <button class="back-button">Go back</button>
-            <button class="clear-button"> Clear High Scores</button>
+            <ol>
+              <li id="record">Your record</li>
+            </ol>
+            <button class="back-button" id="back-btn">Go back</button>
+            <button class="clear-button" id="clear-btn"> Clear High Scores</button>
           </section>
 
         </main>
