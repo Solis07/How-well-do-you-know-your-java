@@ -51,7 +51,7 @@ var submitBtn = document.querySelector('#submit-btn');
 var highScoreScreen = document.querySelector('#highscore-screen');
 var record = document.querySelector('#record');
 var backBtn = document.querySelector('#back-btn');
-var submitBtn = document.querySelector('#clear-btn');
+var clearBtn = document.querySelector('#clear-btn');
 
 var timer = document.querySelector('#timer');
 var timeLeft = 90;
@@ -103,7 +103,7 @@ function checkAnswer(event) {
       check.style.display = "none";
    }, 1000);
 
-   if (questions[questionNumber].answer == event.target.value) {
+   if (questions[questionNumber].answer == event.target.innerHTML) {
       check.textContent = "Correct!";
       total = total + 10;
 
@@ -130,4 +130,18 @@ function gameOver() {
    finalScore.textContent = "Your final score is " + total + ".";
    timer.style.display = "none";
 }
+
+
+
+submitBtn.addEventListener("click", function () {
+   var history = JSON.parse(localStorage.getItem("scores")) || []
+   var userInitials = initials.value;
+   var scoresObj = {
+      score: total,
+      initials: userInitials
+   }
+   history.push(scoresObj)
+   localStorage.setItem("scores", JSON.stringify(history))
+   window.location.reload()
+})
 
