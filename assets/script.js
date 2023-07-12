@@ -121,6 +121,13 @@ function checkAnswer(event) {
 }
 
 answerBtn.forEach(function (click) {
-   click.addEventListener("click" checkAnswer);
+   click.addEventListener("click", checkAnswer);
 });
+
+function gameOver() {
+   questionScreen.style.display = "none";
+   finishScreen.style.display = "block";
+   finalScore.textContent = "Your final score is " + total;
+   timer.style.display = "none";
+}
 
