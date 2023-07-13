@@ -113,13 +113,10 @@
 
  .check {
   display: none;
-  border-top: 1px solid black;
+  border-top: 1px solid grey;
   margin-top: 1.25rem;
- }
-
- .check p {
-  font-size: 1.3rem;
-  margin-top: 5px;
+  font-size: 1.5rem;
+  color: grey;
  }
 
  /* Finish Screen */

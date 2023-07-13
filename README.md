@@ -11,4 +11,4 @@ The following challenge tested our skills as developers by creating a quiz with 
 
 ## Screenshot
 
-![Coding Quiz](./assets/images/code-quiz.jpeg)
+![Coding Quiz](./assets/img/code-quiz.jpeg)
