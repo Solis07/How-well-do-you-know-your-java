@@ -74,6 +74,14 @@
   font-size: 1rem;
  }
 
+.begin-button,
+.submit-button,
+.answer-button,
+.back-button,
+.clear-button:hover {
+  cursor: pointer;
+}
+
  /* Question Screen */
 
  .question-screen {
@@ -133,6 +141,10 @@
   font-size: 1.5rem;
  }
 
+ .label {
+  font-size: 1.5rem; 
+ }
+
  /* High score Screen */
 
  .highscore-screen {
@@ -142,6 +154,11 @@
  .highscore-screen li {
   margin-bottom: 1rem;
   margin-left: 1.3rem;
+ }
+
+ .back-button {
+  margin-right: 1rem;
+  text-decoration: none;
  }
 
 
